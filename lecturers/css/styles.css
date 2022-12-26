@@ -1,0 +1,232 @@
+@import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.dark-mode {
+    background-color: rgb(48, 47, 47);
+    color: white;
+}
+
+.header {
+    background-image: linear-gradient(120deg, #3378ff 0%, #9442fe 100%);
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    top: 0;
+}
+
+.container {
+    width: 100% !important;
+    padding-right: 0% !important;
+    padding-left: 0% !important;
+}
+
+.navbar-brand {
+    margin-left: 10px !important;
+}
+
+.logo {
+    font-size: xx-large;
+    font-weight: bold;
+    color: aliceblue !important ;
+    margin-left: 2%;
+}
+
+.sidenav {
+    height: 100%; 
+    width: 0;
+    float: left;
+    position: fixed;
+    z-index: 1002; 
+    top: 0;
+    left: 0;
+    /* background-color: #111;  */
+    background-image: linear-gradient(120deg, #F9E7FE 0%, #B5F0F0 100%);
+    overflow-x: hidden;
+    padding-top: 60px; 
+    transition: 0.5s; 
+}
+  
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    /* color: #818181; */
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.dropdown > button:hover {
+    /* color: #f1f1f1; */
+    color: rgb(140, 183, 204);
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.dropdown-btn {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    /* font-weight: bold; */
+    /* color: #818181; */
+    color: black;
+    display: block;
+    transition: 0.3s;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+  
+.dropdown-container {
+    display: none;
+    /* background-color: #262626; */
+    background-color: #B5F0F0;
+    padding-left: 8px;
+    transition: 0.3s;
+}
+
+.dropdown-container a {
+    font-size: 20px;
+}
+
+.show {
+    display: block;
+}
+
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+.btn {
+    font-size: 15px !important;
+    font-weight: bolder !important;
+}
+
+#btn {
+    font-weight: lighter !important;
+}
+
+/* Outer */
+.popup {
+	width:100%;
+	height:100%;
+	display:none;
+	position:fixed;
+	top:0px;
+	left:0px;
+	background:rgba(0,0,0,0.75);
+}
+
+/* Popup Menu */
+.popup-inner {
+	max-width:700px;
+	width:90%;
+    height: 70%;
+	padding:40px;
+	position:absolute; 
+	top:50%;
+	left:50%;
+	-webkit-transform:translate(-50%, -50%);
+	transform:translate(-50%, -50%);
+	box-shadow:0px 2px 6px rgba(0,0,0,1);
+	border-radius:3px;
+	background:#fff;
+    overflow-x: hidden;
+}
+
+/* Close Button */
+.popup-close {
+	width:30px;
+	height:30px;
+	padding-top:4px;
+	display:inline-block;
+	position:absolute;
+	top:20px;
+	right:20px;
+	transition:ease 0.25s all;
+	-webkit-transform:translate(50%, -50%);
+	transform:translate(50%, -50%);
+	border-radius:1000px;
+	background:rgba(0,0,0,0.8);
+	font-family:Arial, Sans-Serif;
+	font-size:20px;
+	text-align:center;
+	line-height:100%;
+	color:#fff;
+}
+
+.popup-close:hover {
+	-webkit-transform:translate(50%, -50%) rotate(180deg);
+	transform:translate(50%, -50%) rotate(180deg);
+	background:rgba(0,0,0,1);
+	text-decoration:none;
+}
+
+.main {
+    text-align: justify;
+    text-justify: inter-word;
+    /* margin-top: 25px;     */
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+    padding-top: 0;
+}
+
+.main h2 {
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 0;
+}
+
+.main h3 {
+    padding: 10px;
+    padding-bottom: 0%;
+}
+
+.main p {
+    padding-left: 100px;
+    padding-right: 100px;
+    /* display: ; */
+}
+
+.buttons button {
+    padding: 10px;
+    margin: 10px;
+    align-content: center;
+    align-items: center;
+    background-color: #70c5f7;
+    font-size: 17px;
+    border-radius: 20px;
+}
+
+.myInput  {
+    width: 90%;
+    height: 50px;
+    font-family: monospace;
+    border-width: 1px;
+}
+
+.buttons button a {
+    text-decoration: none;
+    color: black;
+}
